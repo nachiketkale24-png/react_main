@@ -1,0 +1,1 @@
+# start of rect js in main channel
