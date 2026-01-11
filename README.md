@@ -1,1 +1,1 @@
-# start of rect js in main channel
+# start of react js in main channel
