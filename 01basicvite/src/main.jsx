@@ -27,7 +27,8 @@ function MyApp() {
 const areactElement = React.createElement(
     'a',
     {href: 'https://www.google.com', target: '_blank'},
-    'click me to visit google'
+    'click me to visit google',
+    username === 'nachiket' ? "yes" : "no"
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
