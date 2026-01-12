@@ -1,6 +1,7 @@
 function mainContainer(reactElement, container) {
     const domElement = document.createElement(reactElement.type)
     domElement.innerHTML = reactElement
+    
 }
 
 
