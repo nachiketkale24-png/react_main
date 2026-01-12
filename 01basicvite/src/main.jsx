@@ -1,8 +1,35 @@
 
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 
-createRoot(document.getElementById('root')).render(
+const reactElement = {
+    type: 'a',
+    props: {
+        href: 'https://www.google.com',
+        target: '_blank'
+    },
+    children: 'click me to visit google'
+}
+
+const anotherElement = (
+    <a href="https://www.google.com" target="_blank">visit google</a>
+)
+
+function MyApp() {
+    return (
+        <div>
+            <h1>Custom React App</h1>
+        </div>
+    )
+}
+
+const areactElement = React.createElement(
+    'a',
+    {href: 'https://www.google.com', target: '_blank'},
+    'click me to visit google'
+)
+
+ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
 )
